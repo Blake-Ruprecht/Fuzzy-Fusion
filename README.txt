@@ -1,22 +1,31 @@
-##############################################################################
-##############################################################################
-##############################################################################
-# University of Missouri-Columbia
+################################################################################
+################################################################################
+################################################################################
+# Date:             AUG-16-2019
+# Institution:      University of Missouri (Columbia, MO)
+# Authors:          Blake Ruprecht, Muhammad Islam, and Derek Anderson
 #
-# 7/5/2019
+# DESCRIPTION ------------------------------------------------------------------
+#    This is PyTorch code for an Adaptive Neural Fuzzy Inference System (ANFIS)
 #
-# Author: Blake Ruprecht and Muhammad Islam and Derek Anderson
+# Notes:
+# 1. The below FuzzyNeuron class is a single fuzzy inference system (FIS)
+#    What does that mean?
+#    - Its a single first-order Takagi Sugeno Kang (TSK) inference system
+#    What does that mean?
+#    - Each neuron consists of R different IF-THEN rules and the aggregation of
+#      their output.
+# Coming soon...
+#    - We will post cost updates that allow you to do things like
+#    - Learn the number of rules R (via an algorithm like DBSCAN or
+#      k-means/fcm/pcm with cluster validity)
 #
-# Description:
-#  This is PyTorch code for an adaptive neural fuzzy inference system (ANFIS)
+# FOR MORE DETAILS, SEE: -------------------------------------------------------
 #
-##############################################################################
+#   Jang, "ANFIS: adaptive-network-based fuzzy inference system," IEEE
+#       Transactions on Systems, Man and Cybernetics, 23 (3), 1993
 #
-# For more details, see:
-# Jang, "ANFIS: adaptive-network-based fuzzy inference system," IEEE Transactions on Systems, Man and Cybernetics, 23 (3), 1993
-#
-##############################################################################
-#
+# GNU GENERAL PUBLIC LICENSE ---------------------------------------------------
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
@@ -51,7 +60,7 @@
 #         conda install -c conda-forge scikit-learn
 #
 # 2.) Once all of the relevant libraries are installed, make sure you have
-#     the “ANFISPyTorchDeep.py” and “dataset_utils.py” in the same directory,
+#     the “trapANFISPyTorchDeep.py” and “dataset_utils.py” in the same directory,
 #     since we will be using “dataset_utils.py” as a library within “ANFIS…”
 #
 ##############################################################################
@@ -60,11 +69,11 @@
 #
 # RUNNING THE PROGRAM
 #
-# Within the file “ANFISPyTorchDeep.py” we have an example to see how to use
+# Within the file “trapANFISPyTorchDeep.py” we have an example to see how to use
 # the main code. It is at the bottom of the file. The example will execute
 # when the following command is run inside the terminal:
 #     
-#     python ANFISPyTorchDeep.py
+#     python trapANFISPyTorchDeep.py
 #
 # This will execute everything after the “if __name__==‘__main__’:” statement
 # in the code. The example is either a two-layer ANFIS (the if(0) statement),
