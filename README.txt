@@ -69,11 +69,11 @@
 #
 # RUNNING THE PROGRAM
 #
-# Within the file “trapANFISPyTorchDeep.py” we have an example to see how to use
+# Within the file “ANFISPyTorchDeep.py” we have an example to see how to use
 # the main code. It is at the bottom of the file. The example will execute
 # when the following command is run inside the terminal:
 #     
-#     python trapANFISPyTorchDeep.py
+#     python ANFISPyTorchDeep.py
 #
 # This will execute everything after the “if __name__==‘__main__’:” statement
 # in the code. The example is either a two-layer ANFIS (the if(0) statement),
